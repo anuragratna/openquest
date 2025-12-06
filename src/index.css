@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap');
 
 :root {
-  --color-primary: #002B5B; /* Deep Navy Blue */
-  --color-secondary: #C5A059; /* Gold/Bronze */
-  --color-accent: #E5D1A3; /* Light Gold */
-  --color-bg-light: #F5F7FA;
-  --color-text-dark: #333333;
-  --color-text-light: #FFFFFF;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --color-primary: #0A192F;
+  /* Deep Navy */
+  --color-secondary: #64FFDA;
+  /* Electric Teal/Blue */
+  --color-accent: #8892B0;
+  /* Slate */
+  --color-bg-light: #F8F9FA;
+  --color-text-dark: #112240;
+  --color-text-light: #E6F1FF;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --transition-speed: 0.3s;
 }
 
@@ -26,7 +29,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   font-weight: 700;
@@ -116,8 +124,15 @@ img {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {

@@ -3,7 +3,7 @@
 }
 
 .section-subtitle {
-    color: #666;
+    color: var(--color-accent);
     margin-bottom: 4rem;
     font-size: 1.1rem;
 }
@@ -41,7 +41,7 @@
 }
 
 .service-desc {
-    color: #666;
+    color: var(--color-text-dark);
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }

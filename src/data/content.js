@@ -1,5 +1,6 @@
 export const navLinks = [
   { name: "Services", href: "#services" },
+  { name: "Industries", href: "#industries" },
   { name: "Case Studies", href: "#case-studies" },
   { name: "About Us", href: "#about" },
   { name: "Contact", href: "#contact" },
@@ -7,7 +8,7 @@ export const navLinks = [
 
 export const heroContent = {
   title: "Navigating the Future of Business",
-  subtitle: "OpenQuest Consulting empowers enterprises with cutting-edge Data, AI, and Cloud strategies.",
+  subtitle: "OpenQuest Solutions empowers enterprises with cutting-edge Data, AI, and Cloud strategies.",
   ctaPrimary: "Explore Services",
   ctaSecondary: "View Case Studies",
 };
@@ -69,10 +70,37 @@ export const caseStudies = [
   },
 ];
 
+export const industries = [
+  {
+    id: 1,
+    title: "Banking & Finance",
+    icon: "🏦",
+    description: "Modernizing legacy systems and implementing secure, AI-driven financial solutions."
+  },
+  {
+    id: 2,
+    title: "Technology",
+    icon: "💻",
+    description: "Accelerating product development and cloud-native innovation for tech companies."
+  },
+  {
+    id: 3,
+    title: "Retail",
+    icon: "🛍️",
+    description: "Optimizing supply chains and personalizing customer experiences with data analytics."
+  },
+  {
+    id: 4,
+    title: "Sustainable Business",
+    icon: "🌱",
+    description: "Driving ESG goals through data transparency and sustainable tech practices."
+  },
+];
+
 export const footerContent = {
   companyName: "OpenQuest Consulting",
-  address: "123 Innovation Drive, Tech City, TC 90210",
-  email: "contact@openquest.com",
-  phone: "+1 (555) 123-4567",
+  address: "Netherlands",
+  email: "contact@openquest.solutions",
+  phone: "+31 683540581",
   copyright: "© 2025 OpenQuest Consulting. All rights reserved.",
 };
