@@ -1,6 +1,7 @@
 export const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Industries", href: "#industries" },
+  { name: "Knowledge Base", href: "#knowledge-base" },
   { name: "Case Studies", href: "#case-studies" },
   { name: "About Us", href: "#about" },
   { name: "Contact", href: "#contact" },
@@ -94,6 +95,54 @@ export const industries = [
     title: "Sustainable Business",
     icon: "🌱",
     description: "Driving ESG goals through data transparency and sustainable tech practices."
+  },
+];
+
+export const knowledgeBase = [
+  {
+    id: 1,
+    title: "The Future of AI in Enterprise",
+    type: "Whitepaper",
+    description: "A comprehensive guide to adopting agentic AI in large-scale organizations.",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Cloud Migration Checklist",
+    type: "Guide",
+    description: "Essential steps to ensure a smooth and secure transition to the cloud.",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Data Governance Framework",
+    type: "Template",
+    description: "Best practices for managing data privacy and compliance in 2025.",
+    link: "#"
+  },
+];
+
+export const articles = [
+  {
+    id: 1,
+    title: "Why Your Business Needs Agentic AI Now",
+    date: "October 15, 2025",
+    excerpt: "Agentic AI is not just a buzzword; it's the next evolution of automation. Learn how it can transform your operations.",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 2,
+    title: "Navigating the Complexities of Multi-Cloud",
+    date: "September 28, 2025",
+    excerpt: "Strategies for managing costs and security across AWS, Azure, and Google Cloud.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 3,
+    title: "Sustainable Tech: Reducing Carbon Footprint",
+    date: "September 10, 2025",
+    excerpt: "How green computing practices can lower costs and improve your ESG score.",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80"
   },
 ];
 

@@ -1,0 +1,58 @@
+.kb-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.kb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.kb-card {
+    background: var(--color-bg-light);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kb-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.kb-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kb-card h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.kb-card p {
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.kb-link {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.kb-link:hover {
+    text-decoration: underline;
+}
