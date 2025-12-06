@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { articles } from '../data/content';
 import './Articles.css';
 
@@ -17,7 +18,7 @@ const Articles = () => {
                                 <span className="article-date">{article.date}</span>
                                 <h3>{article.title}</h3>
                                 <p>{article.excerpt}</p>
-                                <a href="#" className="read-more">Read Article</a>
+                                <Link to={article.link} className="read-more">Read Article</Link>
                             </div>
                         </article>
                     ))}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { navLinks } from '../data/content';
 import './Header.css';
@@ -17,10 +18,10 @@ const Header = () => {
     return (
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
-                <div className="logo">
+                <Link to="/" className="logo">
                     <img src={logo} alt="OpenQuest Solutions" />
                     <span>OpenQuest</span>
-                </div>
+                </Link>
                 <nav className="nav">
                     <ul className="nav-list">
                         {navLinks.map((link) => (

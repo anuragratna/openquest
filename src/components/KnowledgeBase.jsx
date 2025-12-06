@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { knowledgeBase } from '../data/content';
 import './KnowledgeBase.css';
 
@@ -13,7 +14,7 @@ const KnowledgeBase = () => {
                             <span className="kb-type">{item.type}</span>
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <a href={item.link} className="kb-link">Download Resource &rarr;</a>
+                            <Link to={item.link} className="kb-link">Download Resource &rarr;</Link>
                         </div>
                     ))}
                 </div>

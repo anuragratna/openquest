@@ -1,58 +1,69 @@
 .kb-section {
-    padding: 5rem 0;
-    background-color: white;
+    padding: 6rem 0;
+    background-color: var(--color-bg-surface);
 }
 
 .kb-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .kb-card {
-    background: var(--color-bg-light);
+    background: var(--color-bg-body);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .kb-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(37, 99, 235, 0.2);
+    background: white;
 }
 
 .kb-type {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background-color: rgba(100, 255, 218, 0.1);
-    color: var(--color-primary);
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-radius: 20px;
-    margin-bottom: 1rem;
+    padding: 0.35rem 0.85rem;
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 100px;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
 }
 
 .kb-card h3 {
-    margin-bottom: 1rem;
-    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    color: var(--color-text-heading);
+    font-size: 1.25rem;
 }
 
 .kb-card p {
-    color: var(--color-text-dark);
+    color: var(--color-text-body);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .kb-link {
-    color: var(--color-secondary);
+    color: var(--color-accent);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .kb-link:hover {
-    text-decoration: underline;
+    color: var(--color-accent-hover);
+    text-decoration: none;
 }
