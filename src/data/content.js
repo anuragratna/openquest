@@ -93,26 +93,30 @@ export const industries = [
   {
     id: 1,
     title: "Banking & Finance",
-    icon: "🏦",
-    description: "Modernizing legacy systems and implementing secure, AI-driven financial solutions."
+    icon: "FaBuildingColumns",
+    description: "Modernizing legacy systems and implementing secure, AI-driven financial solutions.",
+    link: "/article/2"
   },
   {
     id: 2,
     title: "Technology",
-    icon: "💻",
-    description: "Accelerating product development and cloud-native innovation for tech companies."
+    icon: "FaLaptopCode",
+    description: "Accelerating product development and cloud-native innovation for tech companies.",
+    link: "/article/1"
   },
   {
     id: 3,
     title: "Retail",
-    icon: "🛍️",
-    description: "Optimizing supply chains and personalizing customer experiences with data analytics."
+    icon: "FaCartShopping",
+    description: "Optimizing supply chains and personalizing customer experiences with data analytics.",
+    link: "/resource/1"
   },
   {
     id: 4,
     title: "Sustainable Business",
-    icon: "🌱",
-    description: "Driving ESG goals through data transparency and sustainable tech practices."
+    icon: "FaLeaf",
+    description: "Driving ESG goals through data transparency and sustainable tech practices.",
+    link: "/article/3"
   },
 ];
 
