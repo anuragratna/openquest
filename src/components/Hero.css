@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');
+    background-image: url('../assets/sales_compass_hero_bg.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
 }
 
 .hero-content {
@@ -105,4 +105,43 @@
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 0.5rem;
+}
+
+.hero-success-message {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.hero-success-message.fade-out-target {
+    animation: messageLifeCycle 5s forwards;
+}
+
+.hero-success-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+
+@keyframes messageLifeCycle {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

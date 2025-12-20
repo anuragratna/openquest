@@ -31,7 +31,7 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <a href="#contact" className="btn btn-primary btn-sm">Get in Touch</a>
+                <Link to="/demo-signup" className="btn btn-primary btn-sm">Book a Demo</Link>
             </div>
         </header>
     );

@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import ArticleDetail from './components/ArticleDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
+import DemoSignup from './components/DemoSignup';
 
 const HomePage = () => (
   <main>
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/article/:id" element={<ArticleDetail />} />
           <Route path="/resource/:id" element={<KnowledgeBaseDetail />} />
+          <Route path="/demo-signup" element={<DemoSignup />} />
         </Routes>
         <Footer />
       </div>

@@ -1,0 +1,95 @@
+.demo-signup-page {
+    padding: 8rem 0 5rem;
+    /* account for fixed header */
+    min-height: 80vh;
+    background-color: var(--bg-dark);
+    /* Using theme variable usually present in main css */
+    color: var(--text-light);
+}
+
+.demo-signup-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demo-signup-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.demo-signup-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    color: var(--primary-color, #3b82f6);
+}
+
+.demo-signup-form {
+    background: rgba(255, 255, 255, 0.05);
+    /* Glassmorphism hint */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color, #3b82f6);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.demo-success-message {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #10b981;
+    margin-bottom: 1rem;
+}
+
+.demo-success-message h2 {
+    margin-bottom: 1rem;
+    color: #10b981;
+}
+
+.demo-success-message p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
