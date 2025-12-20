@@ -1,6 +1,6 @@
 export const navLinks = [
-  { name: "Services", href: "#services" },
   { name: "Products", href: "#products" },
+  { name: "Services", href: "#services" },
   { name: "Industries", href: "#industries" },
   { name: "Knowledge Base", href: "#knowledge-base" },
   { name: "Case Studies", href: "#case-studies" },
@@ -9,10 +9,10 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  title: "Navigating the Future of Business",
-  subtitle: "OpenQuest Solutions empowers enterprises with cutting-edge Data, AI, and Cloud strategies.",
-  ctaPrimary: "Explore Services",
-  ctaSecondary: "View Case Studies",
+  title: "Sales Compass: Data Intelligence",
+  subtitle: "Master your multi-channel empire with the AI-powered unified data intelligence platform.",
+  ctaPrimary: "Book a Demo",
+  ctaSecondary: "Explore Features",
 };
 
 export const productsContent = [
