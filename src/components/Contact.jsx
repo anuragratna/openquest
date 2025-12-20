@@ -1,38 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import { useNavigate } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
-    const [status, setStatus] = useState('idle'); // idle, submitting, success, error
+    // Formspree hook
+    const [state, handleSubmit] = useForm("xykgezow");
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if (status === 'success') {
+        if (state.succeeded) {
             const timer = setTimeout(() => {
-                setStatus('idle');
-                setFormData({ name: '', email: '', subject: '', message: '' });
-            }, 5000); // Fade out after 5 seconds
+                navigate('/');
+            }, 5000);
             return () => clearTimeout(timer);
         }
-    }, [status]);
+    }, [state.succeeded, navigate]);
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setStatus('submitting');
-
-        // Simulate API call
-        setTimeout(() => {
-            setStatus('success');
-        }, 1500);
-    };
+    if (state.succeeded) {
+        return (
+            <section id="contact" className="contact-section">
+                <div className="container">
+                    <div className="contact-wrapper">
+                        <div className="success-message" style={{ display: 'block', padding: '3rem', textAlign: 'center' }}>
+                            <div className="success-content">
+                                <span className="check-icon" style={{ fontSize: '3rem', display: 'block', marginBottom: '1rem' }}>✓</span>
+                                <h4>Request Received</h4>
+                                <p>Your request is well received and we will contact you shortly.</p>
+                                <p style={{ fontSize: '0.9rem', color: '#6b7280', marginTop: '1rem' }}>Redirecting to home page...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
 
     return (
         <section id="contact" className="contact-section">
@@ -64,10 +66,13 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
                                     required
                                     placeholder="John Doe"
+                                />
+                                <ValidationError
+                                    prefix="Name"
+                                    field="name"
+                                    errors={state.errors}
                                 />
                             </div>
                             <div className="form-group">
@@ -76,10 +81,13 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
                                     required
                                     placeholder="john@company.com"
+                                />
+                                <ValidationError
+                                    prefix="Email"
+                                    field="email"
+                                    errors={state.errors}
                                 />
                             </div>
                             <div className="form-group">
@@ -87,44 +95,42 @@ const Contact = () => {
                                 <select
                                     id="subject"
                                     name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
                                     required
+                                    defaultValue=""
                                 >
                                     <option value="" disabled>Select a topic</option>
+                                    <option value="product">Product Inquiry</option>
                                     <option value="Consulting Inquiry">Consulting Inquiry</option>
                                     <option value="Partnership">Partnership</option>
                                     <option value="Support">Support</option>
                                     <option value="Other">Other</option>
                                 </select>
+                                <ValidationError
+                                    prefix="Subject"
+                                    field="subject"
+                                    errors={state.errors}
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
                                 <textarea
                                     id="message"
                                     name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
                                     required
                                     rows="5"
                                     placeholder="Tell us about your project..."
                                 ></textarea>
+                                <ValidationError
+                                    prefix="Message"
+                                    field="message"
+                                    errors={state.errors}
+                                />
                             </div>
 
-                            <button type="submit" className="btn btn-primary btn-block" disabled={status === 'submitting'}>
-                                {status === 'submitting' ? 'Sending...' : 'Send Message'}
+                            <button type="submit" className="btn btn-primary btn-block" disabled={state.submitting}>
+                                {state.submitting ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
-
-                        {status === 'success' && (
-                            <div className="success-message">
-                                <div className="success-content">
-                                    <span className="check-icon">✓</span>
-                                    <h4>Message Sent!</h4>
-                                    <p>Thank you for contacting us! We will get back to you soon.</p>
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 export const navLinks = [
   { name: "Services", href: "#services" },
+  { name: "Products", href: "#products" },
   { name: "Industries", href: "#industries" },
   { name: "Knowledge Base", href: "#knowledge-base" },
   { name: "Case Studies", href: "#case-studies" },
@@ -13,6 +14,23 @@ export const heroContent = {
   ctaPrimary: "Explore Services",
   ctaSecondary: "View Case Studies",
 };
+
+export const productsContent = [
+  {
+    id: 1,
+    title: "Sales Compass",
+    subtitle: "Master Your Multi-Channel Empire",
+    description: "AI-Powered unified data intelligence platform for Amazon, eBay, Walmart, Shopify & more. Stop guessing. Start growing with real data.",
+    features: [
+      "Unified Dashboard for all channels",
+      "AI-Driven Insights",
+      "Real-time Analytics",
+      "Inventory Optimization"
+    ],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    link: "#contact"
+  }
+];
 
 export const services = [
   {

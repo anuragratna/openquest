@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Products from './components/Products';
 import Industries from './components/Industries';
 import KnowledgeBase from './components/KnowledgeBase';
 import Articles from './components/Articles';
@@ -16,6 +17,7 @@ const HomePage = () => (
   <main>
     <Hero />
     <Services />
+    <Products />
     <Industries />
     <KnowledgeBase />
     <Articles />
