@@ -31,7 +31,7 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <Link to="/demo-signup" className="btn btn-primary btn-sm">Book a Demo</Link>
+                <a href="https://app.cal.eu/anuragratna" className="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Book a Demo</a>
             </div>
         </header>
     );
