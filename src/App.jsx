@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import ArticleDetail from './components/ArticleDetail';
+import CaseStudyDetail from './components/CaseStudyDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
 import DemoSignup from './components/DemoSignup';
 
@@ -37,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/article/:id" element={<ArticleDetail />} />
+          <Route path="/case-study/:id" element={<CaseStudyDetail />} />
           <Route path="/resource/:id" element={<KnowledgeBaseDetail />} />
           <Route path="/demo-signup" element={<DemoSignup />} />
         </Routes>

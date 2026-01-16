@@ -78,6 +78,21 @@ export const caseStudies = [
     excerpt: "How we implemented a custom predictive analytics engine to optimize supply chain management for a Fortune 500 retailer.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     category: "Data & AI",
+    hashtags: ["#ArtificialIntelligence", "#RetailTech", "#PredictiveAnalytics", "#Efficiency"],
+    content: `
+      <h2>The Challenge</h2>
+      <p>A Fortune 500 retailer was struggling with supply chain inefficiencies, leading to overstocking in some regions and stockouts in others. Traditional forecasting methods were unable to account for rapidly changing consumer trends and local variables.</p>
+      
+      <h2>The Solution</h2>
+      <p>We implemented a custom predictive analytics engine leveraging machine learning models. By integrating data from sales, weather patterns, and local events, the system could predict demand with 95% accuracy.</p>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>40% Efficiency Boost:</strong> Optimized inventory distribution reduced holding costs.</li>
+        <li><strong>Reduced Stockouts:</strong> Product availability increased by 25% in high-demand zones.</li>
+        <li><strong>Real-time Insights:</strong> The dashboard provided actionable data for regional managers.</li>
+      </ul>
+    `
   },
   {
     id: 2,
@@ -85,6 +100,21 @@ export const caseStudies = [
     excerpt: "A complete legacy infrastructure overhaul for a leading financial institution, achieving 99.99% availability.",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
     category: "Cloud",
+    hashtags: ["#CloudMigration", "#AWS", "#FinTech", "#ZeroDowntime"],
+    content: `
+      <h2>The Challenge</h2>
+      <p>A leading financial institution needed to migrate their legacy on-premise infrastructure to AWS. The critical requirement was zero downtime to ensure uninterrupted banking services for millions of customers.</p>
+      
+      <h2>The Solution</h2>
+      <p>We adopted a "strangler fig" migration pattern, gradually replacing specific functionality with new cloud-based microservices. We utilized AWS Direct Connect for secure, high-speed data transfer and implemented a blue/green deployment strategy.</p>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>Zero Downtime:</strong> The migration was completed without a single second of service interruption.</li>
+        <li><strong>99.99% Availability:</strong> The new cloud architecture significantly improved system reliability.</li>
+        <li><strong>Scalability:</strong> The system can now auto-scale to handle peak transaction volumes.</li>
+      </ul>
+    `
   },
   {
     id: 3,
@@ -92,6 +122,21 @@ export const caseStudies = [
     excerpt: "Revolutionizing patient engagement with a secure, mobile-first portal that reduced administrative overhead by 25%.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     category: "Digital Transformation",
+    hashtags: ["#DigitalHealth", "#PatientExperience", "#HealthcareTech", "#Efficiency"],
+    content: `
+      <h2>The Challenge</h2>
+      <p>A major healthcare provider faced high administrative overhead and low patient engagement due to an outdated, paper-based appointment and records system.</p>
+      
+      <h2>The Solution</h2>
+      <p>We developed a secure, mobile-first patient portal. Features included online appointment scheduling, secure messaging with doctors, and access to lab results. The system was fully HIPAA compliant.</p>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>25% Reduced Overhead:</strong> Automated scheduling and reminders freed up administrative staff.</li>
+        <li><strong>Improved Engagement:</strong> Patient satisfaction scores rose by 30% within the first six months.</li>
+        <li><strong>Fast Access:</strong> Patients could access their records instantly, reducing phone inquiries.</li>
+      </ul>
+    `
   },
 ];
 
@@ -269,5 +314,5 @@ export const footerContent = {
   address: "Netherlands",
   email: "contact@openquest.solutions",
   phone: "+31 683540581",
-  copyright: "© 2025 OpenQuest Consulting. All rights reserved.",
+  copyright: "© 2026 OpenQuest Consulting. All rights reserved.",
 };

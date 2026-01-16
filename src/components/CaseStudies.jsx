@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/content';
 import './CaseStudies.css';
 
@@ -21,7 +22,7 @@ const CaseStudies = () => {
                             <div className="case-content">
                                 <h3 className="case-title">{study.title}</h3>
                                 <p className="case-excerpt">{study.excerpt}</p>
-                                <a href="#" className="btn-text">Read Case Study</a>
+                                <Link to={`/case-study/${study.id}`} className="btn-text">Read Case Study</Link>
                             </div>
                         </article>
                     ))}
