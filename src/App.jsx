@@ -9,6 +9,7 @@ import KnowledgeBase from './components/KnowledgeBase';
 import Articles from './components/Articles';
 import CaseStudies from './components/CaseStudies';
 import Footer from './components/Footer';
+import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import ArticleDetail from './components/ArticleDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
@@ -23,6 +24,7 @@ const HomePage = () => (
     <KnowledgeBase />
     <Articles />
     <CaseStudies />
+    <AboutUs />
     <Contact />
   </main>
 );
