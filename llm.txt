@@ -17,6 +17,7 @@ OpenQuest Solutions is an AI-driven digital transformation consultancy based in 
 - **Cloud Migration:** Secure frameworks for AWS, Azure, and Google Cloud (Multi-cloud management).
 - **Digital Transformation:** Process reimagining for Retail, Banking, and Finance sectors.
 - **Support & Maintenance:** 24/5 peak performance monitoring for critical systems.
+- **Unified Commerce & Google Pay:** Official UCP implementation for US merchants. We handle Merchant Center setup, Business Profile publishing, and Google Pay integration for accelerated checkout.
 
 ## Target Audience & Use Cases
 1. **Multi-channel Retailers:** Businesses looking to stop "guessing" and start growing via real-time inventory and sales data.

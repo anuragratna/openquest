@@ -63,6 +63,12 @@ export const services = [
     description: "Pioneer the next wave of automation with autonomous agents that drive efficiency and decision-making.",
     icon: "🤖",
   },
+  {
+    id: 6,
+    title: "Unified Commerce & Google Pay",
+    description: "Enable UCP for US merchants with Google Pay as an accelerated checkout option. We handle Merchant Center setup and Business Profile publishing.",
+    icon: "🛍️",
+  },
 ];
 
 export const caseStudies = [
