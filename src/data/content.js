@@ -238,6 +238,30 @@ export const articles = [
       <p>Moving to the cloud isn't automatically green. It requires selecting carbon-neutral regions and right-sizing instances to avoid waste.</p>
     `
   },
+  {
+    id: 4,
+    title: "The Website Redirect is Officially Dead",
+    date: "January 16, 2026",
+    excerpt: "With the recent launch of Google’s Universal Commerce Protocol (UCP), the conversion funnel has collapsed. Google is no longer a search engine that points to your business; it is a transaction engine that executes it.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    link: "/article/4",
+    content: `
+      <p>The website redirect is officially dead.</p>
+      <p>With the recent launch of Google’s Universal Commerce Protocol (UCP), the conversion funnel has collapsed. Google is no longer a search engine that points to your business; it is a transaction engine that executes it.</p>
+      
+      <h3>The Conversion Funnel Collapse</h3>
+      <p>The objective is clear: keep the consumer within the AI interface for the entire journey. From discovery and price negotiation to final checkout, the goal is to eliminate the jump to your URL entirely.</p>
+      <p>For merchants, this means the "site visit" is becoming an optional byproduct of commerce. If your products cannot be discovered, negotiated, and purchased via a headless protocol, you are effectively invisible to the agents that now own the customer relationship.</p>
+      
+      <h3>The New Competitive Advantage</h3>
+      <p>The competitive advantage of 2026 is no longer about driving traffic to a URL. It is about ensuring your inventory, business logic, and checkout endpoints are accessible to the protocol.</p>
+      
+      <h3>How We Help</h3>
+      <p>I am currently helping merchants bridge this technical gap. If you need to implement a UCP-compliant infrastructure—from manifest publication at <code>/.well-known/ucp</code> to full AP2 payment integration—I can help you achieve UCP-readiness and secure your place in the agentic economy.</p>
+      <p>Success will not be measured by clicks, but by protocol compliance.</p>
+      <p><em>#GoogleUCP #AgenticCommerce #AEO #FutureOfRetail #EcommerceStrategy #ProtocolEconomy</em></p>
+    `
+  },
 ];
 
 export const footerContent = {
