@@ -1,6 +1,6 @@
 .kb-section {
     padding: 6rem 0;
-    background-color: var(--color-bg-surface);
+    background: transparent;
 }
 
 .kb-grid {
@@ -11,10 +11,12 @@
 }
 
 .kb-card {
-    background: var(--color-bg-body);
+    background: var(--color-glass-surface);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
     padding: 2rem;
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -22,16 +24,18 @@
 
 .kb-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(37, 99, 235, 0.2);
-    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(112, 0, 255, 0.1);
+    border-color: rgba(112, 0, 255, 0.3);
+    /* Purple accent for KB */
+    background: var(--color-glass-surface-hover);
 }
 
 .kb-type {
     display: inline-block;
     padding: 0.35rem 0.85rem;
-    background-color: rgba(37, 99, 235, 0.1);
-    color: var(--color-accent);
+    background-color: rgba(112, 0, 255, 0.1);
+    color: var(--color-border-glow);
+    /* Purple */
     font-size: 0.75rem;
     font-weight: 700;
     border-radius: 100px;
@@ -39,31 +43,38 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     align-self: flex-start;
+    font-family: var(--font-mono);
+    border: 1px solid rgba(112, 0, 255, 0.2);
 }
 
 .kb-card h3 {
     margin-bottom: 0.75rem;
-    color: var(--color-text-heading);
+    color: var(--color-text-primary);
     font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .kb-card p {
-    color: var(--color-text-body);
+    color: var(--color-text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
     flex-grow: 1;
 }
 
 .kb-link {
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-weight: 600;
     font-size: 0.95rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    transition: var(--transition);
 }
 
 .kb-link:hover {
-    color: var(--color-accent-hover);
+    color: white;
     text-decoration: none;
+    text-shadow: 0 0 8px var(--color-primary);
 }

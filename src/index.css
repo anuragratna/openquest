@@ -1,45 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Brand Colors */
-  --color-primary: #0F172A;
-  /* Deep Slate/Navy - Authority */
-  --color-primary-light: #1E293B;
-  /* Lighter Slate */
-  --color-accent: #2563EB;
-  /* Royal Blue - Action */
-  --color-accent-hover: #1D4ED8;
-  /* Darker Blue */
-  --color-secondary: #06B6D4;
-  /* Cyan - Innovation */
+  /* Neural Dark Palette */
+  --color-primary: #00F2FF;
+  /* Neon Cyan */
+  --color-primary-glow: rgba(0, 242, 255, 0.5);
 
-  /* Backgrounds */
-  --color-bg-body: #F8FAFC;
-  /* Very Light Slate */
-  --color-bg-surface: #FFFFFF;
-  /* Pure White */
-  --color-bg-alt: #F1F5F9;
-  /* Light Gray */
+  --color-background: #0B0E14;
+  /* Deep Obsidian */
 
-  /* Typography Colors */
-  --color-text-heading: #0F172A;
-  /* Slate 900 */
-  --color-text-body: #475569;
-  /* Slate 600 */
-  --color-text-muted: #94A3B8;
+  --color-glass-surface: rgba(255, 255, 255, 0.03);
+  /* Ultra-low opacity white */
+  --color-glass-surface-hover: rgba(255, 255, 255, 0.06);
+
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-glow: #7000FF;
+  /* Electric Purple */
+
+  --color-text-primary: #F1F5F9;
+  /* Ghost White */
+  --color-text-secondary: #94A3B8;
   /* Slate 400 */
-  --color-text-inverse: #FFFFFF;
+  --color-text-accent: #00F2FF;
 
-  /* Fonts */
+  --gradient-mesh: linear-gradient(135deg, #7000FF 0%, #00F2FF 100%);
+  --gradient-border: linear-gradient(135deg, #00F2FF, #7000FF);
+
+  /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
-  /* UI Elements */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  /* UI Tokens */
+  --backdrop-blur: 12px;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --shadow-glow: 0 0 20px rgba(0, 242, 255, 0.15);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -51,14 +50,16 @@
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text-body);
-  background-color: var(--color-bg-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
+/* Typography Overrides for Dark Theme */
 h1,
 h2,
 h3,
@@ -66,16 +67,16 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  color: var(--color-text-heading);
+  color: var(--color-text-primary);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: color var(--transition-speed) ease;
+  transition: var(--transition);
 }
 
 ul {
@@ -92,8 +93,32 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 10;
 }
 
+.text-mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.05em;
+}
+
+.text-gradient {
+  background: var(--gradient-border);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Glassmorphism Panel Utility */
+.glass-panel {
+  background: var(--color-glass-surface);
+  backdrop-filter: blur(var(--backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -107,33 +132,41 @@ img {
   transition: var(--transition);
   border: 1px solid transparent;
   gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
-  color: white;
-  box-shadow: var(--shadow-md);
+  background: rgba(0, 242, 255, 0.1);
+  color: var(--color-primary);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-hover);
+  background: rgba(0, 242, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+/* AI / Gradient Border Button */
+.btn-ai {
+  background: var(--color-glass-surface);
+  color: #fff;
+  border: double 1px transparent;
+  border-radius: var(--radius-md);
+  background-image: linear-gradient(var(--color-background), var(--color-background)), var(--gradient-border);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.btn-ai:hover {
   transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
-}
-
-.btn-outline {
-  border-color: var(--color-text-inverse);
-  color: var(--color-text-inverse);
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background-color: var(--color-text-inverse);
-  color: var(--color-primary);
+  box-shadow: 0 0 15px rgba(112, 0, 255, 0.4);
 }
 
 .section-padding {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .text-center {
@@ -141,22 +174,21 @@ img {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: var(--color-secondary);
-  margin: 0.5rem auto 0;
+.section-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Animations */
+/* Simple Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

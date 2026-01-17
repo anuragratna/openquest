@@ -1,6 +1,6 @@
 .about-section {
-    padding: 5rem 0;
-    background-color: var(--color-bg-body);
+    padding: 6rem 0;
+    background: transparent;
 }
 
 .about-container {
@@ -23,15 +23,28 @@
     display: flex;
     justify-content: center;
     max-width: 400px;
+    position: relative;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background: var(--gradient-border);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.5;
 }
 
 .about-image img {
     width: 100%;
     height: auto;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     object-fit: cover;
     aspect-ratio: 1 / 1.2;
+    border: 1px solid var(--color-border);
 }
 
 .about-content {
@@ -39,32 +52,41 @@
 }
 
 .about-pretitle {
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.15em;
     margin-bottom: 0.5rem;
     display: block;
+    font-family: var(--font-mono);
+    text-shadow: 0 0 10px var(--color-primary-glow);
 }
 
 .about-name {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: var(--color-text-heading);
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .about-role {
     font-size: 1.25rem;
-    color: var(--color-text-muted);
+    color: var(--color-text-secondary);
     font-weight: 500;
     margin-bottom: 2rem;
+    font-family: var(--font-mono);
 }
 
 .about-bio {
-    color: var(--color-text-body);
+    color: var(--color-text-primary);
     margin-bottom: 2rem;
     font-size: 1.1rem;
     line-height: 1.7;
+    background: var(--color-glass-surface);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(var(--backdrop-blur));
 }
 
 .about-contact {
@@ -77,24 +99,26 @@
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    color: var(--color-text-heading);
+    color: var(--color-text-primary);
     font-weight: 500;
     text-decoration: none;
     transition: var(--transition);
-    padding: 0.5rem 1rem;
-    background-color: var(--color-bg-surface);
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
     width: fit-content;
 }
 
 .about-link:hover {
-    color: var(--color-accent);
+    color: white;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+    border-color: var(--color-primary);
+    background: rgba(0, 242, 255, 0.1);
 }
 
 .about-icon {
     font-size: 1.25rem;
-    color: var(--color-accent);
+    color: var(--color-primary);
 }

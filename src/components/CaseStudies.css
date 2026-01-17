@@ -1,5 +1,5 @@
 .case-studies-section {
-    background-color: var(--color-bg-surface);
+    background: transparent;
     padding: 6rem 0;
 }
 
@@ -11,20 +11,22 @@
 }
 
 .case-card {
-    background: var(--color-bg-body);
+    background: var(--color-glass-surface);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
 }
 
 .case-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(37, 99, 235, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(112, 0, 255, 0.1);
+    border-color: rgba(112, 0, 255, 0.3);
 }
 
 .case-image-wrapper {
@@ -38,18 +40,20 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    opacity: 0.9;
 }
 
 .case-card:hover .case-image {
     transform: scale(1.05);
+    opacity: 1;
 }
 
 .case-category {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: rgba(15, 23, 42, 0.8);
-    color: white;
+    background: rgba(11, 14, 20, 0.8);
+    color: var(--color-primary);
     padding: 0.35rem 0.85rem;
     border-radius: 100px;
     font-size: 0.75rem;
@@ -57,6 +61,8 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    font-family: var(--font-mono);
 }
 
 .case-content {
@@ -70,11 +76,12 @@
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
     line-height: 1.4;
-    color: var(--color-text-heading);
+    color: var(--color-text-primary);
+    font-weight: 700;
 }
 
 .case-excerpt {
-    color: var(--color-text-body);
+    color: var(--color-text-secondary);
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -82,14 +89,18 @@
 }
 
 .btn-text {
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 0.05em;
     align-self: flex-start;
+    font-family: var(--font-mono);
+    transition: var(--transition);
 }
 
 .btn-text:hover {
-    color: var(--color-accent-hover);
+    color: white;
+    text-shadow: 0 0 8px var(--color-primary);
+    letter-spacing: 0.1em;
 }
