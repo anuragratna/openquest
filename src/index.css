@@ -2,9 +2,9 @@
 
 :root {
   /* Neural Dark Palette */
-  --color-primary: #00F2FF;
-  /* Neon Cyan */
-  --color-primary-glow: rgba(0, 242, 255, 0.5);
+  --color-primary: #7000FF;
+  /* Electric Purple */
+  --color-primary-glow: rgba(112, 0, 255, 0.5);
 
   --color-background: #0B0E14;
   /* Deep Obsidian */
@@ -21,10 +21,10 @@
   /* Ghost White */
   --color-text-secondary: #94A3B8;
   /* Slate 400 */
-  --color-text-accent: #00F2FF;
+  --color-text-accent: #7000FF;
 
-  --gradient-mesh: linear-gradient(135deg, #7000FF 0%, #00F2FF 100%);
-  --gradient-border: linear-gradient(135deg, #00F2FF, #7000FF);
+  --gradient-mesh: linear-gradient(135deg, #7000FF 0%, #7000FF 100%);
+  --gradient-border: linear-gradient(135deg, #7000FF, #7000FF);
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
@@ -38,7 +38,7 @@
   --radius-lg: 1rem;
   --radius-full: 9999px;
 
-  --shadow-glow: 0 0 20px rgba(0, 242, 255, 0.15);
+  --shadow-glow: 0 0 20px rgba(112, 0, 255, 0.15);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -137,16 +137,16 @@ img {
 }
 
 .btn-primary {
-  background: rgba(0, 242, 255, 0.1);
+  background: rgba(112, 0, 255, 0.1);
   color: var(--color-primary);
-  border: 1px solid rgba(0, 242, 255, 0.3);
-  box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(112, 0, 255, 0.3);
+  box-shadow: 0 0 10px rgba(112, 0, 255, 0.1);
 }
 
 .btn-primary:hover {
-  background: rgba(0, 242, 255, 0.2);
+  background: rgba(112, 0, 255, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+  box-shadow: 0 0 20px rgba(112, 0, 255, 0.3);
 }
 
 /* AI / Gradient Border Button */
