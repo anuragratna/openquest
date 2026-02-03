@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { navLinks } from '../data/content';
 import './Header.css';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,6 +15,19 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Function to handle hash scrolling on the same page
+    const handleLinkClick = (e, href) => {
+        if (location.pathname === '/') {
+            e.preventDefault();
+            const element = document.querySelector(href);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                // Update URL hash without reload
+                window.history.pushState(null, '', href);
+            }
+        }
+    };
 
     return (
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>
@@ -26,7 +40,19 @@ const Header = () => {
                     <ul className="nav-list">
                         {navLinks.map((link) => (
                             <li key={link.name} className="nav-item">
-                                <a href={link.href} className="nav-link">{link.name}</a>
+                                {location.pathname === '/' ? (
+                                    <a
+                                        href={link.href}
+                                        className="nav-link"
+                                        onClick={(e) => handleLinkClick(e, link.href)}
+                                    >
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link to={`/${link.href}`} className="nav-link">
+                                        {link.name}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
