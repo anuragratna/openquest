@@ -9,10 +9,10 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  title: "Sales Compass: Data Intelligence",
-  subtitle: "Master your multi-channel empire with the AI-powered unified data intelligence platform.",
-  ctaPrimary: "Book a Demo",
-  ctaSecondary: "Explore Features",
+  title: "AEO & Google UCP Readiness",
+  subtitle: "Master the Agentic World with our AI-powered unified data intelligence platform. Lead the traffic with Agentic Engine Optimization (AEO) and Google UCP compliance.",
+  ctaPrimary: "Book an AEO Audit",
+  ctaSecondary: "Check UCP Score",
 };
 
 export const productsContent = [
@@ -59,14 +59,14 @@ export const services = [
   },
   {
     id: 5,
-    title: "AI Adoption & Agentic AI",
-    description: "Pioneer the next wave of automation with autonomous agents that drive efficiency and decision-making.",
+    title: "AEO & Agentic AI Adoption",
+    description: "Pioneer Agentic Engine Optimization. We deploy autonomous agents that drive efficiency and ensure your business lead the traffic in the Agentic World.",
     icon: "🤖",
   },
   {
     id: 6,
-    title: "Unified Commerce & Google Pay",
-    description: "Enable UCP for US merchants with Google Pay as an accelerated checkout option. We handle Merchant Center setup and Business Profile publishing.",
+    title: "Google UCP & Accelerated Checkout",
+    description: "Enable Google Universal Commerce Protocol for seamless AI-driven transactions. We handle Merchant Center setup and Business Profile optimization for UCP.",
     icon: "🛍️",
   },
 ];
@@ -192,7 +192,7 @@ export const knowledgeBase = [
   },
   {
     id: 2,
-    title: "Stop Burning Cash on Local Servers: The SME’s Urgent Guide to Lean Cloud Migration",
+    title: "The SME’s Urgent Guide to Lean Cloud Migration",
     type: "Guide",
     description: "Essential steps to ensure a smooth and secure transition to the cloud.",
     link: "/resource/2",
@@ -335,6 +335,38 @@ export const articles = [
       <p>Did you know that inefficient code consumes more electricity? By optimizing algorithms and reducing data transfer, we can significantly lower energy consumption.</p>
       <h3>Cloud Optimization</h3>
       <p>Moving to the cloud isn't automatically green. It requires selecting carbon-neutral regions and right-sizing instances to avoid waste.</p>
+    `
+  },
+  {
+    id: 5,
+    title: "Beyond Keywords: The Blueprint for Agentic Engine Optimization (AEO)",
+    date: "February 3, 2026",
+    excerpt: "In the age of Answer Engines and AI Agents, the goal isn't just a click—it's a citation. Learn how to win brand visibility in ChatGPT, Google AI, and the Agentic World.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    link: "/article/5",
+    content: `
+      <p>Search is fundamentally changing. The era of the blue link is being replaced by the era of the <strong>Direct Answer</strong>. For businesses, this means high-intent traffic is no longer captured at the URL—it's captured within the LLM.</p>
+      
+      <h3>The Shift from SEO to AEO</h3>
+      <p>Traditional SEO focuses on keyword density and backlinks. <strong>Agentic Engine Optimization (AEO)</strong> focuses on context, structured knowledge, and protocol readiness. To be cited by an agent, your brand must be more than indexed; it must be <em>understood</em>.</p>
+
+      <h3>3 Pillars of AI Search Visibility</h3>
+      <ul>
+        <li><strong>Prompt Research over Keyword Research:</strong> Stop optimizing for "best CRM" and start optimizing for "What is the most secure CRM for a fintech startup under 50 employees?" LLMs respond to personas and pain points, not just strings.</li>
+        <li><strong>Structural Readiness:</strong> Implementing <code>llms.txt</code> files and comprehensive Schema.org structured data is the new table stakes. If a bot can't crawl your logic, it won't recommend your product.</li>
+        <li><strong>Protocol Compliance:</strong> AI agents don't just want to read about your product; they want to purchase it. This is where Google UCP (Universal Commerce Protocol) becomes the critical bridge.</li>
+      </ul>
+
+      <h3>Are You Ready for the Agentic World?</h3>
+      <p>The first step to winning in AI search is knowing where you stand. Our diagnostic tools analyze your infrastructure for AEO health and UCP compliance.</p>
+      
+      <div style="margin: 30px 0; padding: 20px; background: rgba(0, 242, 255, 0.1); border: 1px solid var(--color-primary); border-radius: 8px; text-align: center;">
+        <h4 style="margin-bottom: 15px;">Run Your AI Search Audit Now</h4>
+        <p style="margin-bottom: 20px;">Check your Agentic Readiness Score and identify gaps in your AEO strategy.</p>
+        <a href="/testAgenticReadiness" class="btn btn-ai" style="text-decoration: none;">✦ Check UCP Readiness</a>
+      </div>
+
+      <p>Success in 2026 will be measured by how many agents treat your business as their primary source of truth. Let's make your brand citation-worthy.</p>
     `
   },
 ];

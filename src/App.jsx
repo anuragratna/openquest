@@ -15,6 +15,7 @@ import ArticleDetail from './components/ArticleDetail';
 import CaseStudyDetail from './components/CaseStudyDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
 import DemoSignup from './components/DemoSignup';
+import UCPReady from './components/UCPReady';
 import './App.css';
 
 // ScrollToTop component to reset scroll on route change
@@ -31,6 +32,7 @@ const HomePage = () => (
     <Hero />
     <Services />
     <Products />
+    <UCPReady />
     <Industries />
     <KnowledgeBase />
     <Articles />

@@ -1,0 +1,222 @@
+/* Redesigned UCPReady Component Styles */
+
+.ucp-ready-section {
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ucp-glass-card {
+    background: rgba(11, 14, 20, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 242, 255, 0.1);
+    border-radius: var(--radius-xl);
+    display: flex;
+    overflow: hidden;
+    min-height: 500px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.ucp-glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 242, 255, 0.05) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+@media (max-width: 992px) {
+    .ucp-glass-card {
+        flex-direction: column;
+    }
+}
+
+/* Left side visual column */
+.ucp-visual {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    min-height: 300px;
+}
+
+.scanner-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    box-shadow: 0 0 15px var(--color-primary);
+    z-index: 10;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.pulse-circles {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse-out 3s infinite;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes pulse-out {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.ucp-status-display {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: var(--font-mono);
+}
+
+.status-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.2rem;
+}
+
+.status-value {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    text-shadow: 0 0 10px var(--color-primary-glow);
+    letter-spacing: 2px;
+}
+
+/* Right side content column */
+.ucp-content {
+    flex: 1.2;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ucp-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.ucp-badge {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ucp-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.ucp-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+}
+
+.ucp-description strong {
+    color: white;
+    font-weight: 600;
+}
+
+.ucp-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.ucp-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.ucp-hint {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hint-icon {
+    font-size: 1.2rem;
+}
+
+.ucp-hint a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.ucp-hint a:hover {
+    text-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+@media (max-width: 768px) {
+    .ucp-content {
+        padding: 2.5rem;
+    }
+
+    .ucp-title {
+        font-size: 2.2rem;
+    }
+}

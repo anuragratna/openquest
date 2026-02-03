@@ -30,6 +30,13 @@
     max-width: 900px;
 }
 
+.hero-badge-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
 /* AI Status Badge */
 .hero-badge {
     display: inline-flex;
@@ -39,11 +46,25 @@
     background: rgba(0, 242, 255, 0.05);
     border: 1px solid rgba(0, 242, 255, 0.2);
     border-radius: var(--radius-full);
-    margin-bottom: 2rem;
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--color-primary);
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.hero-badge-ucp {
+    background: rgba(112, 0, 255, 0.05);
+    border-color: rgba(112, 0, 255, 0.2);
+    color: var(--color-secondary);
+}
+
+.hero-badge-ucp:hover {
+    background: rgba(112, 0, 255, 0.1);
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 20px rgba(112, 0, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .hero-badge-dot {
@@ -55,6 +76,11 @@
     animation: pulse 2s infinite;
 }
 
+.pulse-purple {
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 8px var(--color-secondary);
+}
+
 .hero-title {
     font-size: 5rem;
     color: white;
@@ -63,6 +89,7 @@
     letter-spacing: -0.02em;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
 }
