@@ -99,3 +99,65 @@
     text-align: center;
     font-size: 1.5rem;
 }
+
+/* LinkedIn Sharing Section */
+.article-social-share {
+    margin-top: 4rem;
+    padding-top: 3rem;
+}
+
+.share-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+    margin-bottom: 2rem;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkedin-share-btn,
+.linkedin-company-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: rgba(0, 119, 181, 0.1);
+    border: 1px solid rgba(0, 119, 181, 0.3);
+    border-radius: 8px;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.linkedin-share-btn:hover,
+.linkedin-company-btn:hover {
+    background: rgba(0, 119, 181, 0.2);
+    border-color: #0077b5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-share-btn svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .share-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .linkedin-share-btn,
+    .linkedin-company-btn {
+        justify-content: center;
+    }
+}

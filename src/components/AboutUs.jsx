@@ -16,9 +16,11 @@ const AboutUs = () => {
                     <h3 className="about-role">Co-Founder</h3>
 
                     <p className="about-bio">
-                        Helping merchants bridge the technical gap in the agentic economy.
-                        Focused on Universal Commerce Protocol (UCP) implementation and
-                        AI-driven digital transformation.
+                        An action-driven leader with vast experience in banking and finance, believing
+                        that the greatest transformations emerge not from technology alone, but from
+                        understanding the human systems it serves. Focused on bridging the gap between
+                        what's possible and what's practical—turning strategic vision into measurable
+                        impact for organizations navigating the complexities of a rapidly evolving world.
                     </p>
 
                     <div className="about-contact">
