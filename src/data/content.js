@@ -9,11 +9,38 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  title: "Advancing the Digital Frontier with Agentic Ecosystems",
-  subtitle: "Our integrated platform streamlines the deployment of autonomous AI and unified data layers across eco-efficient cloud environments. We provide industry-specific engineering frameworks designed to scale Fintech operations, optimize Retail supply chains, and power Green Tech innovation.",
-  ctaPrimary: "View Platforms",
-  ctaSecondary: "Explore Solutions",
+  title: "Embed & Ship: Elite Forward Deployed Engineering",
+  subtitle: "We deploy specialized engineering teams into your organization to architect, build, and ship AI-driven solutions. Our FDE model accelerates deployment for FinTech and Logistics, seamlessly integrating unified data layers into your infrastructure.",
+  ctaPrimary: "Explore FDE Model",
+  ctaSecondary: "View Solutions",
 };
+
+export const howWeWork = [
+  {
+    id: 1,
+    title: "1. Discovery & Architecture",
+    description: "Deep dive into your infrastructure to identify bottlenecks and design scalable, secure architectures.",
+    icon: "🔍"
+  },
+  {
+    id: 2,
+    title: "2. Forward Deployed Engineering (FDE)",
+    description: "Our elite engineers embed directly with your teams, bringing specialized expertise and speed.",
+    icon: "🚀"
+  },
+  {
+    id: 3,
+    title: "3. Embed & Ship",
+    description: "Rapid prototyping, development, and shipping of robust AI and data solutions tailored to your needs.",
+    icon: "⚙️"
+  },
+  {
+    id: 4,
+    title: "4. Scale & Handover",
+    description: "Seamless handover, extensive documentation, and strategies for sustainable scaling and maintenance.",
+    icon: "📈"
+  }
+];
 
 export const productsContent = [
   {
@@ -28,20 +55,6 @@ export const productsContent = [
       "Inventory & Sales Optimization"
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    link: "https://app.cal.eu/anuragratna"
-  },
-  {
-    id: 2,
-    title: "AEO & UCP Readiness",
-    subtitle: "Future-Proof Your Digital Commerce",
-    description: "Strategic consulting and implementation for Agentic Engine Optimization (AEO) and Google Universal Commerce Protocol (UCP). Ensure your business is discoverable and transactable in the age of AI agents.",
-    features: [
-      "AEO Strategy & Implementation",
-      "Google UCP Compliance",
-      "AI Agent Discoverability",
-      "Protocol-Ready Infrastructure"
-    ],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     link: "https://app.cal.eu/anuragratna"
   }
 ];
@@ -615,12 +628,6 @@ export const articles = [
       <h3>Are You Ready for the Agentic World?</h3>
       <p>The first step to winning in AI search is knowing where you stand. Our diagnostic tools analyze your infrastructure for AEO health and UCP compliance.</p>
       
-      <div style="margin: 30px 0; padding: 20px; background: rgba(0, 242, 255, 0.1); border: 1px solid var(--color-primary); border-radius: 8px; text-align: center;">
-        <h4 style="margin-bottom: 15px;">Run Your AI Search Audit Now</h4>
-        <p style="margin-bottom: 20px;">Check your Agentic Readiness Score and identify gaps in your AEO strategy.</p>
-        <a href="/testAgenticReadiness" class="btn btn-ai" style="text-decoration: none;">✦ Check UCP Readiness</a>
-      </div>
-
       <p>Success in 2026 will be measured by how many agents treat your business as their primary source of truth. Let's make your brand citation-worthy.</p>
     `
   },
