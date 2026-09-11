@@ -68,9 +68,65 @@ export const services = [
   },
   {
     id: 2,
-    title: "Cloud Migration Strategy",
-    description: "Seamlessly transition to the cloud with our secure, scalable, and cost-effective migration frameworks.",
+    title: "Cloud Infrastructure Optimization & Advisory",
+    description: "Transform your cloud infrastructure into a secure, highly available, and cost-efficient foundation with our deep enterprise expertise.",
     icon: "☁️",
+    link: "/service/2",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80",
+    content: `
+      <h2>Overview</h2>
+      <p>Transform your cloud infrastructure into a secure, highly available, and cost-efficient foundation. Backed by deep expertise across complex enterprise environments—including NXP, ING, and ABN AMRO—OpenQuest Solutions helps engineering and business leaders optimize resources and cut unnecessary cloud spend.</p>
+
+      <h2>Core Offerings</h2>
+      <h3>1. Rapid Infrastructure Audit</h3>
+      <p>Gain immediate visibility into the state of your cloud setup.</p>
+      <ul>
+        <li><strong>Resource Assessment:</strong> Fast diagnostic across compute, application, and storage tiers.</li>
+        <li><strong>Leak Detection:</strong> Identify orphaned volumes, unattached IPs, and idle assets.</li>
+        <li><strong>Security & Compliance:</strong> Evaluate baseline access rules, network segregation, and security posture.</li>
+        <li><strong>Deliverable:</strong> A comprehensive, actionable Audit Report mapping cost risks, performance bottlenecks, and security gaps.</li>
+      </ul>
+
+      <h3>2. Cloud Modernization & Cost Roadmap</h3>
+      <p>A clear, practical strategy tailored to your architecture and growth goals.</p>
+      <ul>
+        <li><strong>Optimization Blueprint:</strong> Prioritized recommendations for rightsizing application, compute, and storage resources.</li>
+        <li><strong>High Availability & Scalability:</strong> Architectural design for fault tolerance, auto-scaling, and multi-region resilience.</li>
+        <li><strong>Security Hardening:</strong> Enterprise-grade security policies and identity governance.</li>
+        <li><strong>Deliverable:</strong> A phased Implementation Roadmap outlining projected savings, architectural changes, and execution steps.</li>
+      </ul>
+
+      <h2>Key Pillars of Optimization</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pillar</th>
+            <th>What We Deliver</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Application & Compute</strong></td>
+            <td>Rightsizing, container optimization, and dynamic auto-scaling rules.</td>
+          </tr>
+          <tr>
+            <td><strong>Storage Management</strong></td>
+            <td>Automated tiering, lifecycle management, and block storage cleanup.</td>
+          </tr>
+          <tr>
+            <td><strong>Orphan Resource Cleanup</strong></td>
+            <td>Elimination of unattached disks, legacy snapshots, and idle IPs.</td>
+          </tr>
+          <tr>
+            <td><strong>High Availability & Security</strong></td>
+            <td>Multi-AZ/region redundancy, zero-trust access controls, and threat exposure reduction.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Proven Enterprise Impact</h2>
+      <p>We bring deep domain experience advising and implementing cloud strategies for industry leaders, including NXP, ING, and ABN AMRO.</p>
+    `
   },
   {
     id: 3,

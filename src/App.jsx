@@ -15,6 +15,7 @@ import Contact from './components/Contact';
 import ArticleDetail from './components/ArticleDetail';
 import CaseStudyDetail from './components/CaseStudyDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
+import ServiceDetail from './components/ServiceDetail';
 import DemoSignup from './components/DemoSignup';
 import './App.css';
 
@@ -69,6 +70,7 @@ function App() {
           <Route path="/article/:id" element={<ArticleDetail />} />
           <Route path="/case-study/:id" element={<CaseStudyDetail />} />
           <Route path="/resource/:id" element={<KnowledgeBaseDetail />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
           <Route path="/demo-signup" element={<DemoSignup />} />
         </Routes>
         <Footer />

@@ -47,6 +47,7 @@
     background: radial-gradient(circle at top right, rgba(0, 242, 255, 0.05), transparent 40%);
     opacity: 0;
     transition: var(--transition);
+    pointer-events: none;
 }
 
 .service-card:hover {
@@ -75,7 +76,8 @@
 }
 
 .service-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
     margin-bottom: 1rem;
     color: var(--color-text-primary);
     font-weight: 700;
@@ -96,6 +98,8 @@
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition);
+    position: relative;
+    z-index: 10;
 }
 
 .service-link:hover {
