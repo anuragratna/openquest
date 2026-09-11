@@ -9,11 +9,38 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  title: "Advancing the Digital Frontier with Agentic Ecosystems",
-  subtitle: "Our integrated platform streamlines the deployment of autonomous AI and unified data layers across eco-efficient cloud environments. We provide industry-specific engineering frameworks designed to scale Fintech operations, optimize Retail supply chains, and power Green Tech innovation.",
-  ctaPrimary: "View Platforms",
-  ctaSecondary: "Explore Solutions",
+  title: "Embed & Ship: Elite Forward Deployed Engineering",
+  subtitle: "We deploy specialized engineering teams into your organization to architect, build, and ship AI-driven solutions. Our FDE model accelerates deployment for FinTech and Logistics, seamlessly integrating unified data layers into your infrastructure.",
+  ctaPrimary: "Explore FDE Model",
+  ctaSecondary: "View Solutions",
 };
+
+export const howWeWork = [
+  {
+    id: 1,
+    title: "1. Discovery & Architecture",
+    description: "Deep dive into your infrastructure to identify bottlenecks and design scalable, secure architectures.",
+    icon: "🔍"
+  },
+  {
+    id: 2,
+    title: "2. Forward Deployed Engineering (FDE)",
+    description: "Our elite engineers embed directly with your teams, bringing specialized expertise and speed.",
+    icon: "🚀"
+  },
+  {
+    id: 3,
+    title: "3. Embed & Ship",
+    description: "Rapid prototyping, development, and shipping of robust AI and data solutions tailored to your needs.",
+    icon: "⚙️"
+  },
+  {
+    id: 4,
+    title: "4. Scale & Handover",
+    description: "Seamless handover, extensive documentation, and strategies for sustainable scaling and maintenance.",
+    icon: "📈"
+  }
+];
 
 export const productsContent = [
   {
@@ -29,20 +56,6 @@ export const productsContent = [
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
     link: "https://app.cal.eu/anuragratna"
-  },
-  {
-    id: 2,
-    title: "AEO & UCP Readiness",
-    subtitle: "Future-Proof Your Digital Commerce",
-    description: "Strategic consulting and implementation for Agentic Engine Optimization (AEO) and Google Universal Commerce Protocol (UCP). Ensure your business is discoverable and transactable in the age of AI agents.",
-    features: [
-      "AEO Strategy & Implementation",
-      "Google UCP Compliance",
-      "AI Agent Discoverability",
-      "Protocol-Ready Infrastructure"
-    ],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-    link: "https://app.cal.eu/anuragratna"
   }
 ];
 
@@ -55,9 +68,65 @@ export const services = [
   },
   {
     id: 2,
-    title: "Cloud Migration Strategy",
-    description: "Seamlessly transition to the cloud with our secure, scalable, and cost-effective migration frameworks.",
+    title: "Cloud Infrastructure Optimization & Advisory",
+    description: "Transform your cloud infrastructure into a secure, highly available, and cost-efficient foundation with our deep enterprise expertise.",
     icon: "☁️",
+    link: "/service/2",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80",
+    content: `
+      <h2>Overview</h2>
+      <p>Transform your cloud infrastructure into a secure, highly available, and cost-efficient foundation. Backed by deep expertise across complex enterprise environments—including NXP, ING, and ABN AMRO—OpenQuest Solutions helps engineering and business leaders optimize resources and cut unnecessary cloud spend.</p>
+
+      <h2>Core Offerings</h2>
+      <h3>1. Rapid Infrastructure Audit</h3>
+      <p>Gain immediate visibility into the state of your cloud setup.</p>
+      <ul>
+        <li><strong>Resource Assessment:</strong> Fast diagnostic across compute, application, and storage tiers.</li>
+        <li><strong>Leak Detection:</strong> Identify orphaned volumes, unattached IPs, and idle assets.</li>
+        <li><strong>Security & Compliance:</strong> Evaluate baseline access rules, network segregation, and security posture.</li>
+        <li><strong>Deliverable:</strong> A comprehensive, actionable Audit Report mapping cost risks, performance bottlenecks, and security gaps.</li>
+      </ul>
+
+      <h3>2. Cloud Modernization & Cost Roadmap</h3>
+      <p>A clear, practical strategy tailored to your architecture and growth goals.</p>
+      <ul>
+        <li><strong>Optimization Blueprint:</strong> Prioritized recommendations for rightsizing application, compute, and storage resources.</li>
+        <li><strong>High Availability & Scalability:</strong> Architectural design for fault tolerance, auto-scaling, and multi-region resilience.</li>
+        <li><strong>Security Hardening:</strong> Enterprise-grade security policies and identity governance.</li>
+        <li><strong>Deliverable:</strong> A phased Implementation Roadmap outlining projected savings, architectural changes, and execution steps.</li>
+      </ul>
+
+      <h2>Key Pillars of Optimization</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pillar</th>
+            <th>What We Deliver</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Application & Compute</strong></td>
+            <td>Rightsizing, container optimization, and dynamic auto-scaling rules.</td>
+          </tr>
+          <tr>
+            <td><strong>Storage Management</strong></td>
+            <td>Automated tiering, lifecycle management, and block storage cleanup.</td>
+          </tr>
+          <tr>
+            <td><strong>Orphan Resource Cleanup</strong></td>
+            <td>Elimination of unattached disks, legacy snapshots, and idle IPs.</td>
+          </tr>
+          <tr>
+            <td><strong>High Availability & Security</strong></td>
+            <td>Multi-AZ/region redundancy, zero-trust access controls, and threat exposure reduction.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Proven Enterprise Impact</h2>
+      <p>We bring deep domain experience advising and implementing cloud strategies for industry leaders, including NXP, ING, and ABN AMRO.</p>
+    `
   },
   {
     id: 3,
@@ -615,12 +684,6 @@ export const articles = [
       <h3>Are You Ready for the Agentic World?</h3>
       <p>The first step to winning in AI search is knowing where you stand. Our diagnostic tools analyze your infrastructure for AEO health and UCP compliance.</p>
       
-      <div style="margin: 30px 0; padding: 20px; background: rgba(0, 242, 255, 0.1); border: 1px solid var(--color-primary); border-radius: 8px; text-align: center;">
-        <h4 style="margin-bottom: 15px;">Run Your AI Search Audit Now</h4>
-        <p style="margin-bottom: 20px;">Check your Agentic Readiness Score and identify gaps in your AEO strategy.</p>
-        <a href="/testAgenticReadiness" class="btn btn-ai" style="text-decoration: none;">✦ Check UCP Readiness</a>
-      </div>
-
       <p>Success in 2026 will be measured by how many agents treat your business as their primary source of truth. Let's make your brand citation-worthy.</p>
     `
   },

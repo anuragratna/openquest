@@ -24,10 +24,17 @@
     z-index: -1;
 }
 
-.hero-content {
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
     position: relative;
     z-index: 1;
-    max-width: 900px;
+}
+
+.hero-content {
+    max-width: 600px;
 }
 
 .hero-badge-group {
@@ -155,6 +162,21 @@
     }
 }
 
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-visual {
+        margin-top: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
@@ -167,4 +189,82 @@
     .hero-btn {
         width: 100%;
     }
+}
+
+/* Architecture Placeholder Styles */
+.architecture-placeholder {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(15, 17, 21, 0.7);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.architecture-placeholder::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(112, 0, 255, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.arch-header {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #FF5F56; }
+.dot-yellow { background: #FFBD2E; }
+.dot-green { background: #27C93F; }
+
+.arch-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.arch-box {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border: 1px dashed var(--color-border);
+    background: rgba(255, 255, 255, 0.02);
+    transition: var(--transition);
+}
+
+.arch-box:hover {
+    border-color: var(--color-primary);
+    background: rgba(112, 0, 255, 0.1);
+    box-shadow: 0 0 15px rgba(112, 0, 255, 0.2);
+}
+
+.arch-arrow {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: bold;
 }

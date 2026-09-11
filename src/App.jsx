@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import HowWeWork from './components/HowWeWork';
 import Services from './components/Services';
 import Products from './components/Products';
 import Industries from './components/Industries';
@@ -14,8 +15,8 @@ import Contact from './components/Contact';
 import ArticleDetail from './components/ArticleDetail';
 import CaseStudyDetail from './components/CaseStudyDetail';
 import KnowledgeBaseDetail from './components/KnowledgeBaseDetail';
+import ServiceDetail from './components/ServiceDetail';
 import DemoSignup from './components/DemoSignup';
-import UCPReady from './components/UCPReady';
 import './App.css';
 
 // ScrollToTop component to reset scroll on route change
@@ -40,9 +41,9 @@ const ScrollToTop = () => {
 const HomePage = () => (
   <main>
     <Hero />
+    <HowWeWork />
     <Services />
     <Products />
-    <UCPReady />
     <Industries />
     <KnowledgeBase />
     <Articles />
@@ -69,6 +70,7 @@ function App() {
           <Route path="/article/:id" element={<ArticleDetail />} />
           <Route path="/case-study/:id" element={<CaseStudyDetail />} />
           <Route path="/resource/:id" element={<KnowledgeBaseDetail />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
           <Route path="/demo-signup" element={<DemoSignup />} />
         </Routes>
         <Footer />
